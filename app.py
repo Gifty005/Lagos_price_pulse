@@ -170,7 +170,7 @@ def main() -> None:
     # -----------------------------------------------------------------------
     st.sidebar.header("🎛️ Simulation Controls")
     commodity = st.sidebar.selectbox(
-        "Select Mile 12 Commodity",
+        "Select lagos market Commodity",
         options=["Tomatoes", "Onions"],
         index=0,
     )
