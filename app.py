@@ -13,7 +13,7 @@ from src.risk_engine import evaluate_price_risk
 # Page Config & Custom Styling
 # ---------------------------------------------------------------------------
 st.set_page_config(
-    page_title="Lagos Price Pulse | Mile 12 Market Risk Dashboard",
+    page_title="Lagos Price Pulse | Lagos Market Risk Dashboard",
     page_icon="🌶️",
     layout="wide",
 )
@@ -227,7 +227,7 @@ def main() -> None:
     # -----------------------------------------------------------------------
     # Header & KPI Cards
     # -----------------------------------------------------------------------
-    st.title("🌶️ Lagos Price Pulse — Mile 12 Early-Warning System")
+    st.title("🌶️ Lagos Price Pulse — lagos Early-Warning System")
     st.caption(
         f"Forecasting wholesale food inflation for **{commodity}** using "
         "NBS fuel prices, FX rates, and Northern Nigeria rainfall data."
