@@ -5,6 +5,8 @@ Multi-factor machine learning system and Streamlit app for predicting monthly to
 
 A multi-factor machine learning pipeline and interactive Streamlit web application that forecasts monthly retail/wholesale prices (₦/kg) for **tomatoes** and **onions** at Mile 12 Market, Lagos (2020–2025).
 
+
+
 ## Project Objectives
 1. Integrate monthly food price records (WFP/NBS) with diesel/petrol prices (NBS), Northern Nigeria rainfall across Kano, Kaduna, and Jos (Open-Meteo), and NGN/USD exchange rates (CBN).
 2. Analyze price shocks before and after major macroeconomic events (such as the June 2023 fuel subsidy removal) and seasonal harvest cycles.
@@ -27,6 +29,13 @@ Lagos_price_pulse/
 └── requirements.txt          # Python dependencies
 ```
 
+Risk Classification (src/risk_engine.py):
+
+🟢 GREEN (< 5% projected increase): Low Risk / Stable Market
+
+🟡 YELLOW (5% – 15% projected increase): Moderate Risk / Upward Price Pressure
+
+🔴 RED (> 15% projected increase): High Risk / Severe Price Spike Alert
 ## Local Setup Instructions (For Team Collaborators)
 
 1. **Clone the repository:**
@@ -56,9 +65,11 @@ Lagos_price_pulse/
    bash
    streamlit run app.py
    
+Team Credits
+Gifty — Project Lead, Data Integration (master_mile12_data.csv), Model Benchmarking & Deployment
 
-## Team Roles & Data Status
-* **Team Lead (`Gifty005` — Data Cleaning, Merging & Git Maintenance):** Food prices (WFP/NBS — *Cleaned*), pipeline integration, repository maintenance[cite: 8, 9]
-* **Adedamola:** NGN/USD exchange rates (CBN)
-* **Bisola:** Northern Nigeria historical rainfall across Kano, Kaduna & Jos (Open-Meteo — *Cleaned*)
-* **Muhammed:** Fuel prices (PMS & AGO, NBS )
+Damola — Exploratory Data Analysis (notebooks/eda.ipynb) & Feature Engineering (src/features.py)
+
+Bisola — Chronological Model Training & Evaluation (src/train.py)
+
+Yasir — Risk-Alert Engine (src/risk_engine.py) & Streamlit Dashboard (app.py)
