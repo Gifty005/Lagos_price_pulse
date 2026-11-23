@@ -14,7 +14,7 @@ from src.risk_engine import evaluate_price_risk
 # ---------------------------------------------------------------------------
 st.set_page_config(
     page_title="Lagos Price Pulse | Lagos Market Risk Dashboard",
-    page_icon="🌶️",
+    page_icon="🍅",
     layout="wide",
 )
 
